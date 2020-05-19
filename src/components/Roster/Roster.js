@@ -5,7 +5,9 @@ import './Roster.scss';
 class Roster extends React.Component {
   render() {
     return (
-      <h2>In Roster Component</h2>
+      <div className="Roster">
+        <h2>In Roster Component</h2>
+      </div>
     );
   }
 }
