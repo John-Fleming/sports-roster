@@ -20,7 +20,9 @@ class Navbar extends React.Component {
     return (
       <div className="Navbar">
         <nav className="navbar navbar-expand-lg">
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className="navbar-brand text-white" href="#">Astros</a>
+          {/* eslint-disable-next-line max-len */}
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
