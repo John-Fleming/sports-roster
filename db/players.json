@@ -1,54 +1,54 @@
 {
   "player1": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/514888@3x.png",
+    "imageUrl": "https://a.espncdn.com/i/headshots/mlb/players/full/31662.png",
     "name": "Jose Altuve",
     "position": "2B",
     "uid": "ujp7X6plNaNeAJlfRORdjU9T8uk1"
   },
   "player2": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/493329@3x.png",
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/36006.png",
     "name": "Yuli Gurriel",
     "position": "1B",
     "uid": "12345"
   },
   "player3": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/621043@3x.png",
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32653.png&w=600&h=436",
     "name": "Carlos Correa",
     "position": "SS",
     "uid": "ujp7X6plNaNeAJlfRORdjU9T8uk1"
   },
   "player4": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/608324@3x.png",
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/34886.png&w=600&h=436",
     "name": "Alex Bregman",
     "position": "3B",
     "uid": "67890"
   },
   "player5": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/455117@3x.png",
+    "imageUrl": "https://a.espncdn.com/i/headshots/mlb/players/full/30289.png",
     "name": "Martin Maldonado",
     "position": "C",
     "uid": "ujp7X6plNaNeAJlfRORdjU9T8uk1"
   },
   "player6": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/543807@3x.png",
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/32078.png&w=600&h=436",
     "name": "George Springer",
     "position": "CF",
     "uid": "ujp7X6plNaNeAJlfRORdjU9T8uk1"
   },
   "player7": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/488726@3x.png",
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/30043.png",
     "name": "Michael Brantley",
     "position": "LF",
     "uid": "ujp7X6plNaNeAJlfRORdjU9T8uk1"
   },
   "player8": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/502210@3x.png",
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/30195.png",
     "name": "Josh Reddick",
     "position": "RF",
     "uid": "ujp7X6plNaNeAJlfRORdjU9T8uk1"
   },
   "player9": {
-    "imageUrl": "https://img.mlbstatic.com/mlb-photos/image/upload/images/headshots/current/60x60/434378@3x.png",
+    "imageUrl": "https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/6341.png&w=600&h=436",
     "name": "Justin Verlander",
     "position": "P",
     "uid": "ujp7X6plNaNeAJlfRORdjU9T8uk1"
