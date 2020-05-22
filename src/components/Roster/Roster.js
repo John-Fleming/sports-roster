@@ -13,7 +13,6 @@ class Roster extends React.Component {
   }
 
   componentDidMount() {
-    console.error('uid', authData.getUid());
     playerData.getPlayersByUid(authData.getUid())
       .then((players) => this.setState({ players }))
       .catch((err) => console.error('could not get players: ', err));
