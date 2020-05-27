@@ -23,7 +23,7 @@ class Navbar extends React.Component {
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className="navbar-brand text-white" href="#">
             {/* eslint-disable-next-line max-len */}
-            <img id="nav-logo" src="https://lh3.googleusercontent.com/proxy/TSRGQLDRjEG7ic6n64g3PNNUK-z4ETJEPgNtJUO8uVofkb8FuFJfTbLKh9LTNENC1ge3y6oatF4z47dpxaafpvUhiOtzsS-A_e6Yc9dtRcGLfYlm9o7obkoMrh4-pg" alt="astros-logo"/>
+            {/* <img id="nav-logo" src="https://lh3.googleusercontent.com/proxy/TSRGQLDRjEG7ic6n64g3PNNUK-z4ETJEPgNtJUO8uVofkb8FuFJfTbLKh9LTNENC1ge3y6oatF4z47dpxaafpvUhiOtzsS-A_e6Yc9dtRcGLfYlm9o7obkoMrh4-pg" alt="astros-logo"/> */}
             Astros
           </a>
           {
