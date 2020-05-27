@@ -48,7 +48,7 @@ class Roster extends React.Component {
         <h2>Astros' Roster</h2>
         <button className="btn btn-light" onClick={() => this.setState({ formOpen: true })}><i className="fas fa-plus"></i></button>
         { formOpen ? <PlayerForm addPlayer={this.addPlayer} /> : ''}
-        <div className="d-flex flex-wrap mt-2">
+        <div className="player-container mt-2">
           {makePlayers}
         </div>
       </div>

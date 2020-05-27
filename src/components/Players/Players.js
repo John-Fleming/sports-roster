@@ -18,8 +18,7 @@ class Player extends React.Component {
   render() {
     const { player } = this.props;
     return (
-      <div className="Player col-lg-4 col-md-6 my-2">
-        <div className="card mx-auto">
+        <div className="Player card my-3">
           <div className="header-photo-container">
             <img className="card-img-top header-photo" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Houston_astros_logo.png" alt="Player" />
           </div>
@@ -29,7 +28,6 @@ class Player extends React.Component {
           <p className="card-text">{player.position}</p>
           <button className="btn btn-light" onClick={this.deletePlayerEvent}><i className="fas fa-trash-alt"></i></button>
         </div>
-      </div>
       </div>
     );
   }
