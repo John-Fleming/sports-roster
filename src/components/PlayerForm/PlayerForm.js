@@ -11,6 +11,19 @@ class PlayerForm extends React.Component {
     playerName: '',
     playerPosition: '',
     playerImageUrl: '',
+    isEditing: false,
+  }
+
+  componentDidMount() {
+    const { player } = this.props;
+    if (player.name) {
+      this.setState({
+        playerName: player.name,
+        playerPosition: player.position,
+        playerImageUrl: player.imageUrl,
+        isEditing: true,
+      });
+    }
   }
 
   nameChange = (e) => {
@@ -41,8 +54,30 @@ class PlayerForm extends React.Component {
     addPlayer(newPlayer);
   }
 
+  updatePlayer = (e) => {
+    e.preventDefault();
+    const { player, putPlayer } = this.props;
+    const {
+      playerName,
+      playerPosition,
+      playerImageUrl,
+    } = this.state;
+    const updatedPlayer = {
+      imageUrl: playerImageUrl,
+      name: playerName,
+      position: playerPosition,
+      uid: authData.getUid(),
+    };
+    putPlayer(player.id, updatedPlayer);
+  }
+
   render() {
-    const { playerName, playerPosition, playerImageUrl } = this.state;
+    const {
+      playerName,
+      playerPosition,
+      playerImageUrl,
+      isEditing,
+    } = this.state;
     return (
       <div className="PlayerForm mb-4">
         <form className="col-6 offset-3">
@@ -58,7 +93,10 @@ class PlayerForm extends React.Component {
             <label htmlFor="player-image">Image Url</label>
             <input type="text" className="form-control" id="player-image" placeholder="Image Url" value={playerImageUrl} onChange={this.imageChange}/>
           </div>
-          <button className="btn btn-primary" onClick={this.savePlayer}>Save Player</button>
+          { isEditing
+            ? <button className="btn btn-light" onClick={this.updatePlayer}>Update Player</button>
+            : <button className="btn btn-light" onClick={this.savePlayer}>Save Player</button>
+          }
         </form>
       </div>
     );
