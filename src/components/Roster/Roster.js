@@ -12,6 +12,7 @@ class Roster extends React.Component {
   state = {
     players: [],
     formOpen: false,
+    editPlayer: {},
   }
 
 
@@ -40,14 +41,27 @@ class Roster extends React.Component {
       .catch((err) => console.error('could not add new player: ', err));
   }
 
+  editAPlayer = (player) => {
+    this.setState({ formOpen: true, editPlayer: player });
+  }
+
+  putPlayer = (playerId, updatedPlayer) => {
+    playerData.updatePlayer(playerId, updatedPlayer)
+      .then(() => {
+        this.getTeam();
+        this.setState({ formOpen: false, editPlayer: {} });
+      })
+      .catch((err) => console.error('could not update player: ', err));
+  }
+
   render() {
-    const { players, formOpen } = this.state;
-    const makePlayers = players.map((player) => <Player key={player.id} player={player} removePlayer={this.removePlayer}/>);
+    const { players, formOpen, editPlayer } = this.state;
+    const makePlayers = players.map((player) => <Player key={player.id} player={player} removePlayer={this.removePlayer} editAPlayer={this.editAPlayer}/>);
     return (
       <div className="Roster">
         <h2>Astros' Roster</h2>
         <button className="btn btn-light" onClick={() => this.setState({ formOpen: true })}><i className="fas fa-plus"></i></button>
-        { formOpen ? <PlayerForm addPlayer={this.addPlayer} /> : ''}
+        { formOpen ? <PlayerForm addPlayer={this.addPlayer} player={editPlayer} putPlayer={this.putPlayer}/> : ''}
         <div className="player-container mt-2">
           {makePlayers}
         </div>

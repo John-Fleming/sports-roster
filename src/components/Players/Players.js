@@ -15,6 +15,12 @@ class Player extends React.Component {
     removePlayer(player.id);
   }
 
+  editPlayerEvent = (e) => {
+    e.preventDefault();
+    const { player, editAPlayer } = this.props;
+    editAPlayer(player);
+  }
+
   render() {
     const { player } = this.props;
     return (
@@ -26,6 +32,7 @@ class Player extends React.Component {
         <div className="card-body">
           <h5 className="card-title">{player.name}</h5>
           <p className="card-text">{player.position}</p>
+          <button className="btn btn-light" onClick={this.editPlayerEvent}><i className="fas fa-pencil-alt"></i></button>
           <button className="btn btn-light" onClick={this.deletePlayerEvent}><i className="fas fa-trash-alt"></i></button>
         </div>
       </div>
